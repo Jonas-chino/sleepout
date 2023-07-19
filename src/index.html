@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <script>
+      function captura (){
+    var datas = document.getElementById("tbox").value;
+    alert(datas);
+    console.log(datas);
+    localStorage.setItem('user-emi', datas);
+}
+    </script>
     <header class="divider">
       <div class="logo">
         <img src="/images/noun_Tent_2517.svg" alt="tent image for logo">
@@ -101,6 +109,17 @@
         </ul>
       </section>
     </main>
-    <footer>&copy;NOT a real business</footer>
+    <div class="email_container">
+      <form action="">
+          <h3>join our</h3>
+          
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo voluptates magni quia necessitatibus asperiores? Neque nobis aspernatur suscipit, exercitationem ab doloremque! Accusantium quam iure quia iste nemo placeat vitae illum!</p>
+              <div class="email_box">
+                  <input id="tbox" placeholder="email" type="email">
+                  <button id="btn-emi" type="button" onclick="captura()">suscribe</button>
+          </div>
+      </form>
+  </div>
+    <footer>&copy;NOT a real business xdxd</footer>
   </body>
 </html>

@@ -220,3 +220,50 @@ footer {
   font-size: var(--small-font);
   padding: 1em;
 }
+.email_container{
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.email_container p {
+  max-width: 600px;
+  margin: 40px auto;
+}
+.email_box{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#tbox, #btn-emi{
+  border: none;
+  outline: none;
+}
+#tbox{
+  width: 0px;
+  transition: 0.5s;
+  background-color: #b2b4a4;
+  opacity:1;
+}
+#btn-emi:hover{
+  background-color: brown;
+  font-size: 1.2rem;
+}
+.email_box:hover> #tbox, #tbox:focus{
+  width: 260px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 600px){
+  .product-card img{
+    max-width: 159px;
+  }
+}
+
+
+.product-card img:hover{
+  transform: scale(1.21);
+  transition: 0.2s;
+}
